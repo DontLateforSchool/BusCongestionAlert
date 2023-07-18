@@ -16,3 +16,6 @@ spring:
   logging.level:
     org.hibernate.SQL: debug
   #  org.hibernate.type: trace
+
+  server:
+    address: 172.31.13.48
