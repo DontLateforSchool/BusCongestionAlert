@@ -19,9 +19,9 @@ public class BimsService {
      */
     public List<BusInfoDto> getBusInfo() {
         List<BusInfoDto> data = bimsApiService.getBusInfoByRouteId().getData();
-        for (BusInfoDto info: data) {
-            if(info.getVehicleNumber()!=null){
-                info.setCongestion(Congestion.여유);
+        for (BusInfoDto info : data) {
+            if (info.getVehicleNumber() != null) {
+                info.setCongestion(Congestion.LOW);
             }
         }
         return data;
@@ -30,7 +30,7 @@ public class BimsService {
     /**
      * 노선 정류소 도착정보 조회
      */
-    public List<ArriveInfoDto> getArriveInfo(String busStopId){
+    public List<ArriveInfoDto> getArriveInfo(String busStopId) {
         return bimsApiService.getBusStopArriveByBusStopIdLineId(busStopId).getData();
     }
 }
