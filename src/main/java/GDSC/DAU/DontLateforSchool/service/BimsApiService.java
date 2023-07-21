@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 @Component
 @Slf4j
 public class BimsApiService {
-    private static final String API_KEY = URLDecoder.decode("mofS8gBCi9ZbpBDJhymIoplzEITyGWqzbyIkxDbRq7JaejDwjmSrNLEshxzCQgdrVxwVoCJsAMFMzoShuHB8kw%3D%3D", StandardCharsets.UTF_8);
+    private static final String API_KEY = URLDecoder.decode("", StandardCharsets.UTF_8);
     private static final String API_HOST = "https://apis.data.go.kr/6260000/BusanBIMS";
     private static final Integer MAX_IN_MEMORY_SIZE = 1024 * 1024 * 10; // 10MB
     private static final String LINE_ID = "5291010000"; // 노선 ID(사하 10)

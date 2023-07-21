@@ -4,5 +4,5 @@ import lombok.Getter;
 
 @Getter
 public enum Congestion {
-    LOW, NORMAL, HIGH, FULL
+    LOW, NORMAL, HIGH
 }
